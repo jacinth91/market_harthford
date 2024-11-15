@@ -18,7 +18,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onTabChange, activeTab, onLogout }) =
   return (
     <div className="h-screen w-64 bg-gray-900 text-white fixed left-0 top-0 flex flex-col">
       <div className="p-4 flex items-center space-x-3 border-b border-gray-800">
-        <img src="/logo.png" alt="Hartford Logo" className="h-8 w-auto" />
+        <img src="/harthfors_logo.png" alt="Hartford Logo" className="h-8 w-auto" />
         <span className="text-xl font-semibold">MarketMaestro</span>
       </div>
       
