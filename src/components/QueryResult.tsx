@@ -114,7 +114,7 @@ const QueryResult: React.FC<QueryResultProps> = ({ metrics }) => {
 
   return (
     <div className="flex gap-4 mt-2">
-      <div className="flex-1 bg-white rounded-lg shadow-sm overflow-hidden">
+      {/* <div className="flex-1 bg-white rounded-lg shadow-sm overflow-hidden">
         {Object.entries(groupedMetrics).map(([category, items], index) => (
           <div key={index} className={`${index > 0 ? 'border-t border-gray-100' : ''}`}>
             <div className="px-4 py-3 bg-gray-50">
@@ -135,7 +135,57 @@ const QueryResult: React.FC<QueryResultProps> = ({ metrics }) => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+         <div className="p-6 bg-gray-50 text-gray-900">
+      <h1 className="text-3xl font-bold mb-4">Wells Fargo 3Q24 Financial Results</h1>
+      
+      <h2 className="text-xl font-semibold mb-2">Financial Performance</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Net Income: $5.1 billion, or $1.42 per share.</li>
+        <li>Total Revenue: $20.4 billion, a 2% decline year-over-year.</li>
+        <li>Net Interest Income: Fell by 11%.</li>
+        <li>Noninterest Income: Increased by 12%.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Credit Quality</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Credit Loss Provisions: $1.1 billion set aside for credit losses.</li>
+        <li>Net Loan Charge-Offs: Rose to 0.49% of average loans.</li>
+        <li>Allowance for Credit Losses: $14.7 billion.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Loans and Deposits</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Average Loans: $910.3 billion, a 3% decline year-over-year.</li>
+        <li>Average Deposits: Stable at $1.3 trillion.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Capital and Liquidity</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Common Equity Tier 1 (CET1) Ratio: 11.3%.</li>
+        <li>Liquidity Coverage Ratio (LCR): 127%, indicating strong capital and liquidity positions.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Segment Performance</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Consumer Banking and Lending: Revenue down 5% year-over-year, with lower deposit balances offset by higher deposit-related fees.</li>
+        <li>Commercial Banking: Revenue increased 7% from the previous quarter but fell 2% year-over-year.</li>
+        <li>Corporate and Investment Banking: Revenue up 2% from the prior quarter, driven by higher trading activity.</li>
+        <li>Wealth and Investment Management: Revenue rose 5% year-over-year due to higher asset-based fees and improved market valuations.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Outlook</h2>
+      <ul className="list-disc pl-6 mb-4">
+        <li>Net Interest Income: Expected to decline by 9% from 2023 levels.</li>
+        <li>Total Noninterest Expense: Projected to remain at $54 billion.</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mb-2">Key Insights</h2>
+      <ul className="list-disc pl-6">
+        <li>This report highlights strong credit and liquidity positions.</li>
+        <li>Challenges include declining interest income and variability across business segments.</li>
+      </ul>
+    </div>
 
       {/* <div className="w-72 space-y-3">
         <h4 className="text-sm font-medium text-gray-900 mb-2">Related Insights</h4>
