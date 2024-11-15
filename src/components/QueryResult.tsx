@@ -137,7 +137,7 @@ const QueryResult: React.FC<QueryResultProps> = ({ metrics }) => {
         ))}
       </div>
 
-      <div className="w-72 space-y-3">
+      {/* <div className="w-72 space-y-3">
         <h4 className="text-sm font-medium text-gray-900 mb-2">Related Insights</h4>
         {suggestions.map((suggestion, index) => (
           <div
@@ -153,7 +153,7 @@ const QueryResult: React.FC<QueryResultProps> = ({ metrics }) => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
